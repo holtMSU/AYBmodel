@@ -108,7 +108,7 @@
             var mtlLoader = new THREE.MTLLoader();
             mtlLoader.setBaseUrl('assets/');
             mtlLoader.setPath('assets/');
-            mtlLoader.load('AYB.mtl', function (materials) {
+            mtlLoader.load('AYB.final', function (materials) {
 
                 materials.preload();
 
@@ -118,7 +118,7 @@
                 var objLoader = new THREE.OBJLoader();
                 objLoader.setMaterials(materials);
                 objLoader.setPath('assets/');
-                objLoader.load('AYB.obj', function (object) {
+                objLoader.load('AYBfinal.obj', function (object) {
 
                     scene.add(object);
 
